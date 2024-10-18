@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:maxmilian_quiz_app/questions_screen.dart';
 import 'package:maxmilian_quiz_app/start_screen.dart';
+// import 'package:maxmilian_quiz_app/start_screen.dart';
 
 class Quiz extends StatefulWidget {
   const Quiz({super.key});
@@ -10,22 +11,27 @@ class Quiz extends StatefulWidget {
 }
 
 class _QuizState extends State<Quiz> {
-  Widget? activeScreen;
+  var activeScreen = "start-screen";
+  // Widget? activeScreen;
 
-  @override
-  void initState() {
-    activeScreen = MyApp(changeScreen);
-    super.initState();
-  }
+  // @override
+  // void initState() {
+  //   activeScreen = "questions-screen";
+  //    activeScreen = MyApp(changeScreen);
+  //   super.initState();
+  // }
 
   void changeScreen() {
     setState(() {
-      activeScreen = const QuestionsScreen();
+      activeScreen = "questions-screen";
     });
   }
 
   @override
   Widget build(BuildContext context) {
+    final quizScreen = activeScreen == "start-screen"
+        ? MyApp(changeScreen)
+        : const QuestionsScreen();
     return MaterialApp(
       home: Scaffold(
         body: Container(
@@ -39,7 +45,8 @@ class _QuizState extends State<Quiz> {
               end: Alignment.bottomRight,
             ),
           ),
-          child: activeScreen,
+          child: quizScreen,
+          // child: activeScreen,
         ),
       ),
     );
