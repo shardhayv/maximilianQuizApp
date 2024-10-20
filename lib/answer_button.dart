@@ -14,7 +14,7 @@ class AnswerButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-          padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(
               Radius.circular(20),
@@ -25,6 +25,7 @@ class AnswerButton extends StatelessWidget {
       onPressed: onTap,
       child: Text(
         answerText,
+        textAlign: TextAlign.center,
       ),
     );
   }
