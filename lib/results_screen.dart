@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:maxmilian_quiz_app/data/questions.dart';
+import 'package:maxmilian_quiz_app/questions_summary.dart';
 
 class ResultsScreen extends StatelessWidget {
   const ResultsScreen({
@@ -37,7 +38,9 @@ class ResultsScreen extends StatelessWidget {
           children: [
             const Text("You answer a/z answers correctly!"),
             const SizedBox(height: 30),
-            const Text("List of Aswers and Questions"),
+            QuestionsSummary(
+              summaryData: getSummaryData(),
+            ),
             const SizedBox(height: 30),
             TextButton(
               onPressed: () {},
