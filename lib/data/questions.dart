@@ -45,34 +45,34 @@ const questions = [
         "src/",
         "native/",
       ]),
-  // QuizQuestion(text: "What is a 'Widget' in Flutter?", answers: [
-  //   "A UI building block", // Correct answer moved to index 0
-  //   "A database entity",
-  //   "A state management tool",
-  //   "A backend service",
-  // ]),
-  // QuizQuestion(
-  //     text: "How do you declare a Stateless widget in Flutter?",
-  //     answers: [
-  //       "class MyWidget extends StatelessWidget", // Correct answer moved to index 0
-  //       "class MyWidget extends Widget",
-  //       "class MyWidget implements StatelessWidget",
-  //       "class MyWidget extends StateWidget",
-  //     ]),
-  // QuizQuestion(
-  //     text: "Which tool can be used to check for errors in Flutter code?",
-  //     answers: [
-  //       "flutter analyze", // Correct answer moved to index 0
-  //       "flutter doctor",
-  //       "flutter check",
-  //       "flutter verify",
-  //     ]),
-  // QuizQuestion(
-  //     text: "Which of the following is used to manage state in Flutter?",
-  //     answers: [
-  //       "BLoC", // Correct answer moved to index 0
-  //       "SQL",
-  //       "HTTP",
-  //       "CSS",
-  //     ]),
+  QuizQuestion(text: "What is a 'Widget' in Flutter?", answers: [
+    "A UI building block", // Correct answer moved to index 0
+    "A database entity",
+    "A state management tool",
+    "A backend service",
+  ]),
+  QuizQuestion(
+      text: "How do you declare a Stateless widget in Flutter?",
+      answers: [
+        "class MyWidget extends StatelessWidget", // Correct answer moved to index 0
+        "class MyWidget extends Widget",
+        "class MyWidget implements StatelessWidget",
+        "class MyWidget extends StateWidget",
+      ]),
+  QuizQuestion(
+      text: "Which tool can be used to check for errors in Flutter code?",
+      answers: [
+        "flutter analyze", // Correct answer moved to index 0
+        "flutter doctor",
+        "flutter check",
+        "flutter verify",
+      ]),
+  QuizQuestion(
+      text: "Which of the following is used to manage state in Flutter?",
+      answers: [
+        "BLoC", // Correct answer moved to index 0
+        "SQL",
+        "HTTP",
+        "CSS",
+      ]),
 ];
